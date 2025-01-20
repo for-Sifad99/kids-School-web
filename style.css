@@ -47,16 +47,13 @@ nav.navbar {
   padding: 10px 130px;
   position: relative;
 }
-
 nav .nav-item,nav .nav-links, .nav-button, .adjust-div{
   display: flex;
   align-items: center;
 }
-
 .nav-logo img {
   max-width: 62%;
 }
-
 .nav-logo h1{
   font-size: 2rem;
   font-weight: 550;
@@ -64,14 +61,12 @@ nav .nav-item,nav .nav-links, .nav-button, .adjust-div{
   margin-left: 4px;
   letter-spacing: -2px;
 }
-
 .nav-links a{
   text-decoration: none ;
   font-size: 1.1rem;
   font-weight: 420;
   margin-right: 40px;
 }
-
 .nav-btn{
   padding: 12px 60px;
   background-color: #FEA301;
@@ -89,7 +84,6 @@ nav .nav-item,nav .nav-links, .nav-button, .adjust-div{
   right: 9%; /* Position near the logo */
   top: 30px;
 }
-
 .hamburger span {
   width: 25px;
   height: 3px;
@@ -105,34 +99,113 @@ nav .nav-item,nav .nav-links, .nav-button, .adjust-div{
   margin: 0 auto;
   gap: 30px;
 }
-
 .banner-content{
   padding-top: 12%;
   padding-right: 5%;
 }
-
 .banner-content h1{
   font-size: 3.2rem;
   color: #111111;
-  font-weight: 550;
-  line-height: 50px;
+  font-weight: 880;
+  line-height: 55px;
   margin-bottom: 27px;
 }
-
 .banner-content p{
   font-size: 1rem;
   color: #111111;
   font-weight: normal;
   margin-bottom: 27px;
 }
-
 .banner-btn{
   padding: 14px 40px;
   background-color: #111111;
 }
 
-/* Mobile responsive */
+/*  curriculum section adding and styling */
+.curriculum{
+  display: flex;
+  flex-direction: column;
+  padding: 8% 10%;
+  max-width: 100%;
+  height: 880px;
+  background-image: url(./images/bg.png) ;
+}
+.activities-parent{
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.curriculum > h1{
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 7%;
+}
+.activity-1, .activity-2, .activity-3{
+  text-align: center;
+}
+.activity-1{
+  max-width: 31%;
+  height: auto;
+  background: linear-gradient(to bottom, #DEF5FF 5%, #FFFFFF 40%);
+  box-shadow: 2px 2px 10px #e6e3e3;
+  padding:  60px 23px;
+  border-radius: 18.5px;
+}
+.activity-2{
+  max-width: 31%;
+  height: auto;
+  background: linear-gradient(to bottom, #FFF4DC 5%, #FFFFFF 40%);
+  box-shadow: 2px 2px 10px #e6e3e3;
+  padding:  60px 23px;
+  border-radius: 18.5px;
+}
+.activity-3{
+  max-width: 31%;
+  height: auto;
+  background: linear-gradient(to bottom, #F2E8FF 5%, #FFFFFF 40%);
+  box-shadow: 2px 2px 10px #e6e3e3;
+  padding:  60px 23px;
+  border-radius: 18.5px;
+}
+.activity-2 img, .activity-3 img{
+  margin-bottom: 7%;
+}
+.activity-1 img{
+  margin-bottom: 3.1%;
+}
 
+.activity-1 h1, .activity-2 h1, .activity-3 h1{
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 7%;
+}
+
+.activity-1 h4, .activity-2 h4, .activity-3 h4{
+  font-size: 0.9rem;
+  font-weight: normal;
+  margin-bottom: 10%;
+}
+.activity-1 a, .activity-2 a, .activity-3 a{
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.standard-btn{
+  display: flex;
+  max-width: 100%;
+  height: auto;
+  margin-top: 10%;
+  margin-left: 43%;
+  margin-right: 38%;
+  justify-content: space-evenly;
+}
+.standard-btn a img{
+  max-width: 49%;
+
+  height: auto;
+}
 @media (max-width : 600px) {
   /* navbar responsive */
   .nav-links a{
@@ -158,7 +231,7 @@ nav .nav-item,nav .nav-links, .nav-button, .adjust-div{
     margin-top: 70px;
     background-color: #FFFFFF;
     width: 100%;
-    padding-left: 210px;
+    padding-left: 30%;
     align-items: center;
   }
   #menu-toggle:checked ~ .nav-links a,
@@ -207,4 +280,47 @@ nav .nav-item,nav .nav-links, .nav-button, .adjust-div{
   .banner-content p{
     font-size: 0.7rem;
   } 
+
+  /* curriculum section responsive */
+  .curriculum > h1{
+    font-size: 2.4rem;
+    line-height: 34px;
+    margin-top: 20%;
+  }
+  .activities-parent{
+    display: flex;
+    flex-direction: column;
+  }
+  .activity-1{
+    max-width: 98%;
+    height: auto;
+    padding:  50px 18px;
+    margin-top: 5%;
+  }
+  .activity-2{
+    max-width: 98%;
+    height: auto;
+    padding:  50px 18px;
+    margin-top: 5%;
+  }
+  .activity-3{
+    max-width: 98%;
+    height: auto;
+    padding:  50px 18px;
+    margin-top: 5%;
+  }
+  .activity-1 h1, .activity-2 h1, .activity-3 h1{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 7%;
+  }
+  
+  .activity-1 h4, .activity-2 h4, .activity-3 h4{
+    font-size: 0.8rem;
+    font-weight: normal;
+    margin-bottom: 9%;
+  }
+  .activity-1 a, .activity-2 a, .activity-3 a{
+    font-size: 1.2rem;
+  }
 }
