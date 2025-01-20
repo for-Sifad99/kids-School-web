@@ -8,31 +8,39 @@
 </head>
 <body class="primary-font">
   <header>
-      <nav>
-        <div class="nav-section">
-          <div class="nav-logo">
-            <img src="./images/logo.png" alt="">
-            <h1> SCHOOL </h1>
-          </div>
-          <div class="nav-links">
-            <ul>
-              <li><a href="" class="color-1"> Home </a></li>
-              <li><a href="" class="color-2"> About </a></li>
-              <li><a href="" class="color-3"> Facilities </a></li>
-              <li><a href="" class="color-4"> Admission </a></li>
-            </ul>
-          </div>
-          <div>
-            <button class="primary-btn back1-color"> contact </button>
-          </div>
+      <nav class="navbar">
+        <!-- Logo and Text -->
+        <div class="nav-item">
+          <img src="./images/logo.png" alt="" class="logo">
+          <h1 class="brand-text"> SCHOOL </h1>
         </div>
+          <!-- Hamburger Menu Checkbox -->
+          <input type="checkbox" id="menu-toggle">
+          <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <!-- Navigation Links -->
+            <div class="nav-links">
+              <a href="" class="color-1"> Home </a>
+              <a href="" class="color-2"> About </a>
+              <a href="" class="color-3"> Facilities </a>
+              <a class="last" href="" class="color-4"> Admission </a>
+          </div>
+            <!-- Button -->
+          <div class="nav-button">
+            <button class="primary-btn nav-btn cta-button">contact</button>
+          </div>
       </nav>
-      <section class="nav-section">
+      <section class="banner-section">
         <div class="banner-content">
-
+          <h1><span class="color-1">Empowering</span> students from small age <span class="color-2">towards vision</span></h1>
+          <p> With the courage, Confidence, Creativity and Compassion to make their Unique Contribution in a Diverse and Dynamic World. </p>
+          <button class="primary-btn banner-btn"> Enroll Now </button>
         </div>
         <div class="banner-picture">
-          
+          <img src="./images/hero-kids.png" alt="">
         </div>
       </section>
   </header>
@@ -43,4 +51,4 @@
 
   </footer>
 </body>
-</html>
+
