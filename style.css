@@ -567,6 +567,11 @@ nav .nav-item,nav .nav-links, .nav-button, .adjust-div{
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
   }
+  .story-btn{
+    font-size: 0.6rem;
+      margin: 6% 38%;
+      padding: 2% 0%;
+  }
   /* footer section responsive */
   .about-simple{
     flex-direction: column;
